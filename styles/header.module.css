@@ -1,0 +1,45 @@
+.header {
+    width: 100vw;
+    padding-top: 24px;
+    max-height: 64px;
+}
+
+.headerLogo{
+    margin-left: calc(50% - 75px);
+    margin-bottom: 22px;
+    display: inline-block;
+}
+
+.headerNavIcon {
+    margin-bottom: 22px;
+    margin-left: 32px;
+    display: inline-block;
+}
+
+.headerNav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 256px;
+    height: 100vh;
+    padding-top: 64px;
+    padding-left: 32px;
+    background: var(--footer-color);
+}
+
+/* darken the background of the rest of screen when nav is open */
+
+.headerNavScreenOverLay {
+    position: absolute;
+    z-index: -1;
+    top: 64px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000bf;
+}
+
+.headerNavBtn {
+    background: var(--second-color);
+    margin-top: 339px;
+}
