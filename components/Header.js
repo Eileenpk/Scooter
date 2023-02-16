@@ -1,11 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "@/styles/header.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import hamburger from "@/public/icons/hamburger.svg";
 import close from "@/public/icons/close.svg";
 import logo from "@/public/images/logo.svg";
+import GetWindowWidth from '@/components/functions/GetWindowWidth'
+
 export default function Header() {
+    // keep nav state shown based on window size
+    const { width } = GetWindowWidth();
+    useEffect(() => {
+        setIsNavOpen(true)
+    },[width > 700])
   // open and close mobile navbar
   const [isNavOpen, setIsNavOpen] = useState("");
   const openNavBar = () => {
