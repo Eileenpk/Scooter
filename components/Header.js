@@ -40,7 +40,7 @@ export default function Header() {
         </>
       ) : (
         <>
-        <div className={styles.headerNavScreenOverLay}></div>
+          <div className={styles.headerNavScreenOverLay}></div>
           <Image
             src={close}
             width={19}
@@ -59,13 +59,25 @@ export default function Header() {
           />
 
           <nav className={styles.headerNav}>
-            <Link href="/About" className={styles.headerNavLink}>
+            <Link
+              href="/About"
+              className={styles.headerNavLink}
+              onClick={() => setIsNavOpen(false)}
+            >
               About
             </Link>
-            <Link href="/Locations" className={styles.headerNavLink}>
+            <Link
+              href="/Locations"
+              className={styles.headerNavLink}
+              onClick={() => setIsNavOpen(false)}
+            >
               Location
             </Link>
-            <Link href="/Careers" className={styles.headerNavLink}>
+            <Link
+              href="/Careers"
+              className={styles.headerNavLink}
+              onClick={() => setIsNavOpen(false)}
+            >
               Careers
             </Link>
 
