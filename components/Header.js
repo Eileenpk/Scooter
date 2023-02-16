@@ -12,7 +12,7 @@ export default function Header() {
     const { width } = GetWindowWidth();
     useEffect(() => {
         setIsNavOpen(true)
-    },[width > 700])
+    },[width > 768])
   // open and close mobile navbar
   const [isNavOpen, setIsNavOpen] = useState("");
   const openNavBar = () => {

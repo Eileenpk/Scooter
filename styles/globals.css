@@ -119,7 +119,11 @@ button {
 }
 
 /* general styles */
-
+body {
+  display: flex;
+  justify-content: center;
+  
+}
 button {
   background: var(--second-color);
   height: 53px;
