@@ -56,6 +56,7 @@ export default function Header() {
             onClick={closeNavBar}
             className={styles.headerNavIcon}
           />
+          
           <Image
             src={logo}
             width={75}

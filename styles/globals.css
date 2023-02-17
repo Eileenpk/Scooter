@@ -100,6 +100,42 @@ body {
 h1, h2, h3, h4 {
   font-family: var(--heading-font-family);
   color: var(--heading-color);
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -1.7857142686843872px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -1.4285714626312256px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.8928571343421936px;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.8035714030265808px;
+}
+
+p {
+  font-family: var(--font-family);
+  color: var(--font-color);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
 }
 
 nav a {
@@ -118,11 +154,43 @@ button {
   line-height: 25px;
 }
 
+@media (min-width: 768px) {
+  h1 {
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  }
+  
+  h2 {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.142857074737549px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.0714285373687744px;
+  }
+  
+  h4 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.0714285373687744px;
+  }
+  
+}
+
+@media(min-width:1200px) {
+  
+
+}
+
 /* general styles */
 body {
   display: flex;
   justify-content: center;
-  
+
 }
 button {
   background: var(--second-color);

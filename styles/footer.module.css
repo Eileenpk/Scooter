@@ -1,0 +1,31 @@
+/* typography */
+
+.footerHeader {
+    color: var(--main-color);
+}
+
+/* end typography */
+
+.footerDownloadSectionWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 375px;
+    background-color: var(--third-color);
+    background-image: url('/public/patterns/semi-circles.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+    padding-top: 88px;
+}
+
+.footerSignupIconWrapper {
+    margin: 40px auto;
+}
+
+.footerSignupIcons {
+    display: inline-block;
+}
+
+.footerSignupIcons:first-of-type {
+    margin-right: 13px;
+}
