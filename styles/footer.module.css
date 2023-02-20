@@ -4,22 +4,36 @@
     color: var(--main-color);
 }
 
-/* end typography */
+@media(min-width:768px) {
+    .footerHeader {
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.142857074737549px;
+    }
+}
 
+/* end typography */
+.footer {
+    width: 100vw;
+}
+
+.footerHeader {
+    margin:0px auto 40px auto;
+    max-width: 311px;
+}
 .footerDownloadSectionWrapper {
     display: flex;
     flex-direction: column;
     height: 375px;
     background-color: var(--third-color);
-    background-image: url('/public/patterns/semi-circles.svg');
+    background-image: url('/patterns/semi-circles.svg');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom center;
+    background-position: bottom right -150px;
     padding-top: 88px;
 }
 
 .footerSignupIconWrapper {
-    margin: 40px auto;
+    margin: 0px auto 0px auto;
 }
 
 .footerSignupIcons {
@@ -28,4 +42,33 @@
 
 .footerSignupIcons:first-of-type {
     margin-right: 13px;
+}
+
+@media(min-width:768px) {
+    .footerHeader {
+        max-width: 457px;
+    }
+}
+
+@media(min-width:1440px) {
+    .footer {
+        width: 100vw;
+    }
+
+    .footerDownloadSectionWrapper {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .footerHeader {
+        max-width: 415px;
+        text-align: left;
+        margin-left: 165px;
+        margin-right: 336px;
+    }
+    
+    .footerSignupIconWrapper {
+        margin-left: 0;
+    }
 }

@@ -11,14 +11,6 @@ export default function Footer() {
 
         <div className={styles.footerSignupIconWrapper}>
 
-        <Image
-            src={background}
-            width={113}
-            height={40}
-            alt="App store link"
-            href="https://www.apple.com/app-store/"
-            className={styles.footerSignupIcons}
-          />
           <Image
             src={appStore}
             width={113}
