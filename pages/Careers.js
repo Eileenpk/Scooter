@@ -7,8 +7,8 @@ export default function Careers() {
         title="Careers"
         src={GetImageBasedOnWidth(
           "/images/careers-location-hero-mobile.jpg",
-          "/images/careers-location-hero-tablet.jpg",
-          "/images/careers-location-hero-desktop.jpg"
+          "/images/careers-locations-hero-tablet.jpg",
+          "/images/careers-locations-hero-desktop.jpg"
         )}
         plain={true}
       />

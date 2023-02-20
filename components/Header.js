@@ -74,21 +74,21 @@ export default function Header() {
             <Link
               href="/About"
               className={styles.headerNavLink}
-              onClick={() => setIsNavOpen(false)}
+              onClick={() => setIsNavOpen(width > 767 ? true : false)}
             >
               About
             </Link>
             <Link
               href="/Locations"
               className={styles.headerNavLink}
-              onClick={() => setIsNavOpen(false)}
+              onClick={() => setIsNavOpen(width > 767 ? true : false)}
             >
               Locations
             </Link>
             <Link
               href="/Careers"
               className={styles.headerNavLink}
-              onClick={() => setIsNavOpen(false)}
+              onClick={() => setIsNavOpen(width > 767 ? true : false)}
             >
               Careers
             </Link>
