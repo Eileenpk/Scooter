@@ -49,7 +49,7 @@
         display: flex;
         align-items: center;
         height: 96px;
-        max-width: 1106px;
+        /* max-width: 1106px; */
     }
     
     .headerLogo{
@@ -87,11 +87,14 @@
 }
 
 @media (min-width:1200px) {
+    .header {
+        margin: auto;
+    }
     .headerLogo{
-        margin-left: 0px;
+        margin-left: 165px;
     }
     
     .headerNavBtn {
-        margin-right: 0px;
+        margin-right: 165px;
     }
 }
