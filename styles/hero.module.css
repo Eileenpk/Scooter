@@ -6,7 +6,7 @@
 .heroHeadingOnly {
     color: var(--main-color);
     width: 83%;
-    margin: auto;
+    margin: 20px auto 0 auto;
     margin-bottom: 24px;
     padding-top: 115px;
 }
@@ -26,5 +26,17 @@
     margin: auto;
 }
 
-.heroArrow {
+@media(min-width: 768px) {
+    .heroImageContainer {
+        width: 100vw;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    .heroCircles{
+        position: relative;
+        left: 31px;
+    }
 }
