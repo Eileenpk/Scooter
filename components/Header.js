@@ -5,14 +5,14 @@ import Image from "next/image";
 import hamburger from "@/public/icons/hamburger.svg";
 import close from "@/public/icons/close.svg";
 import logo from "@/public/images/logo.svg";
-import GetWindowWidth from '@/components/functions/GetWindowWidth'
+import GetWindowWidth from "@/components/functions/GetWindowWidth";
 
 export default function Header() {
-    // keep nav state shown based on window size
-    const { width } = GetWindowWidth();
-    useEffect(() => {
-        setIsNavOpen(true)
-    },[width > 768])
+  // keep nav state shown based on window size
+  const { width } = GetWindowWidth();
+  useEffect(() => {
+    setIsNavOpen(true);
+  }, [width > 768]);
   // open and close mobile navbar
   const [isNavOpen, setIsNavOpen] = useState("");
   const openNavBar = () => {
@@ -36,14 +36,16 @@ export default function Header() {
             className={styles.headerNavIcon}
           />
 
-          <Image
-            src={logo}
-            width={75}
-            height={20}
-            alt="hamburger icon to open navigation"
-            onClick={openNavBar}
-            className={styles.headerLogo}
-          />
+          <Link href="/">
+            <Image
+              src={logo}
+              width={75}
+              height={20}
+              alt="Scoot logo"
+              onClick={openNavBar}
+              className={styles.headerLogo}
+            />
+          </Link>
         </>
       ) : (
         <>
@@ -56,15 +58,17 @@ export default function Header() {
             onClick={closeNavBar}
             className={styles.headerNavIcon}
           />
-          
-          <Image
-            src={logo}
-            width={75}
-            height={20}
-            alt="hamburger icon to open navigation"
-            onClick={openNavBar}
-            className={styles.headerLogo}
-          />
+
+          <Link href="/">
+            <Image
+              src={logo}
+              width={75}
+              height={20}
+              alt="Scoot logo"
+              onClick={openNavBar}
+              className={styles.headerLogo}
+            />
+          </Link>
 
           <nav className={styles.headerNav}>
             <Link
@@ -79,7 +83,7 @@ export default function Header() {
               className={styles.headerNavLink}
               onClick={() => setIsNavOpen(false)}
             >
-              Location
+              Locations
             </Link>
             <Link
               href="/Careers"

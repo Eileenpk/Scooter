@@ -1,0 +1,30 @@
+.hero {
+    width: 100vw;
+    min-height: 160px;
+}
+.heroHeading,
+.heroHeadingOnly {
+    color: var(--main-color);
+    width: 83%;
+    margin: auto;
+    margin-bottom: 24px;
+    padding-top: 115px;
+}
+
+.heroHeadingOnly {
+    padding-top: 60px;
+}
+
+.heroText {
+    width: 83%;
+    margin: auto;
+    margin-bottom: 34px;
+}
+
+.heroBtn {
+    width: fit-content;
+    margin: auto;
+}
+
+.heroArrow {
+}
