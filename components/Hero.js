@@ -33,6 +33,7 @@ export default function Hero({ title, text, btn, src, height, arrow, plain }) {
 
       {arrow && width > 768 && (
         <div className={styles.heroImageContainer}>
+          <div className={styles.heroLineImage}></div>
           <Image
             src={arrowImg}
             alt="arrow pointing right"

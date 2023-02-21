@@ -39,4 +39,42 @@
         position: relative;
         left: 31px;
     }
+
+    .heroLineImage {
+        display: none;
+    }
+}
+
+@media(min-width:1400px) {
+
+    .heroHeading {
+      width: 500px;  
+      text-align: left;
+      margin-left: 165px;
+    }
+
+    .heroText {
+       width: 405px;
+       text-align: left;
+       margin-left: 260px;
+    }
+
+    .heroImageContainer {
+        position: absolute;
+        top: 340px;
+    }
+
+    .heroLineImage {
+       display: unset; 
+       position: relative;
+       top: -135px;
+       background-image: url('/patterns/line.svg');
+       height: 16px;
+       width: 125px;
+       margin-right: 502px;
+    }
+
+    .heroBtn {
+        margin-left: 260px;
+    }
 }
