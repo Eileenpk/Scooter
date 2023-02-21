@@ -10,7 +10,7 @@ import getWindowWidth from "@/components/functions/GetWindowWidth"
 export default function Footer() {
   const {width} = getWindowWidth()
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id='download'>
       <section className={styles.footerDownloadSectionWrapper}>
         <h2 className={styles.footerHeader}>Sign up and Scoot off today</h2>
 

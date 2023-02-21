@@ -42,9 +42,12 @@
 
 .headerNavBtn {
     background: var(--second-color);
-    margin-top: 339px;
+    margin-top: 339px; 
 }
 
+.headerNavBtn a {
+    color: var(--main-color);
+}
 @media (min-width:768px) {
     .header {
         display: flex;

@@ -93,7 +93,7 @@ export default function Header() {
               Careers
             </Link>
 
-            <button className={styles.headerNavBtn}>Get Scooting</button>
+            <button className={styles.headerNavBtn}><a href='#download'>Get Scooting</a></button>
           </nav>
         </>
       )}
