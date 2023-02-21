@@ -1,5 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
+import phoneIcon from "@/public/icons/locate.svg"
+import scooterIcon from "@/public/icons/scooter.svg"
+import rideIcon from "@/public/icons/ride.svg"
 import styles from "@/styles/Home.module.css";
 import Hero from "@/components/Hero";
 import GetImageBasedOnWidth from "@/components/functions/GetImageBasedOnWidth";
@@ -25,6 +28,42 @@ export default function Home() {
           height='650px'
           arrow={true}
         />
+
+        <section className={styles.processOuterWrapper}>
+            <div className={styles.proccessCard}>
+              <Image
+                src={phoneIcon}
+                alt='hand holding a phone icon'
+                width={56}
+                height={56}
+                className={styles.proccessIcon}
+              />
+              <h3 className={styles.proccessHeading}>Locate with app</h3>
+              <p>Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
+            </div>
+            <div className={styles.proccessCard}>
+              <Image
+                src={scooterIcon}
+                alt='scooter icon'
+                width={56}
+                height={56}
+                className={styles.proccessIcon}
+              />
+              <h3 className={styles.proccessHeading}>Pick your scooter</h3>
+              <p>We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost.</p>
+            </div>
+            <div className={styles.proccessCard}>
+              <Image
+                src={rideIcon}
+                alt='scooter driving icon'
+                width={56}
+                height={56}
+                className={styles.proccessIcon}
+              />
+              <h3 className={styles.proccessHeading}>Enjoy the ride</h3>
+              <p>Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps.</p>
+            </div>
+        </section>
       </main>
     </>
   );
