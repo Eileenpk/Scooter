@@ -1,10 +1,13 @@
 import Hero from "@/components/Hero";
 import Feature from "@/components/Feature";
+import Values from "@/components/Values";
+
+import styles from "@/styles/careers.module.css"
 
 import GetImageBasedOnWidth from "@/components/functions/GetImageBasedOnWidth";
 export default function Careers() {
   return (
-    <>
+    <article>
       <Hero
         title="Careers"
         src={GetImageBasedOnWidth(
@@ -23,6 +26,10 @@ export default function Careers() {
         },
       ]}
       />
-    </>
+
+      <section className={styles.careersValueSection}>
+        <Values heading='Why join us?'/>
+      </section>
+    </article>
   );
 }

@@ -1,10 +1,11 @@
 import Hero from "@/components/Hero";
 import Feature from "@/components/Feature";
-
+import Values from "@/components/Values";
+import styles from "@/styles/about.module.css";
 import GetImageBasedOnWidth from "@/components/functions/GetImageBasedOnWidth";
 export default function About() {
   return (
-    <>
+    <article>
       <Hero
         title="About"
         src={GetImageBasedOnWidth(
@@ -14,7 +15,7 @@ export default function About() {
         )}
         plain={true}
       />
-      <Feature 
+      <Feature
         featureInfo={[
           {
             heading: "Mobility for the digital era",
@@ -29,6 +30,9 @@ export default function About() {
           },
         ]}
       />
-    </>
+      <section className={styles.aboutSection}>
+        <Values heading='Our values'/>
+      </section>
+    </article>
   );
 }

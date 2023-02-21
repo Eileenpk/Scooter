@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column; 
     align-items: center;
+    margin-bottom: 120px;
 }
 
 /* proccess cards section*/
@@ -19,7 +20,9 @@
 }
 
 @media(min-width:768px) {
-
+    .main {
+        margin-bottom: 104px;
+    }
     .processOuterWrapper {
         background-image: url(/patterns/vertical-blue-line.png);
         background-repeat: no-repeat;
@@ -50,6 +53,9 @@
 
 
 @media(min-width:1200px) {
+    .main {
+        margin-bottom: 200px;
+    }
     .processOuterWrapper {
         background-image: url(/patterns/horizontal-blue-line.png);
         background-position: top 160px right 390px;

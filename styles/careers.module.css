@@ -1,0 +1,10 @@
+.careersValueSection {
+    margin-top: 120px;
+    margin-bottom: 145px;
+}
+
+@media(min-width:768px) {
+    .careersValueSection {
+        margin-bottom: 120px;
+    }
+}

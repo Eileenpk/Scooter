@@ -2,7 +2,7 @@ import Hero from "@/components/Hero";
 import GetImageBasedOnWidth from "@/components/functions/GetImageBasedOnWidth";
 export default function Locations() {
   return (
-    <>
+    <article>
       <Hero
         title="Locations"
         src={GetImageBasedOnWidth(
@@ -13,6 +13,6 @@ export default function Locations() {
         plain={true}
       />
       <h1>Locations page</h1>
-    </>
+    </article>
   );
 }

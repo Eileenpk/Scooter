@@ -1,0 +1,62 @@
+.values {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center; 
+   gap: 55px;
+}
+
+.value {
+    padding: 0 11% 0 11%;
+}
+
+.valueImage {
+    margin: auto;
+    border-radius: 50%;
+}
+
+.valueCircleWithNumber {
+    margin: auto;
+    position: relative;
+    top: -48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-color);
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+}
+
+.valueHeading {
+    margin-top: -40px;
+    margin-bottom: 27px;
+}
+
+@media(min-width:768px) {
+    
+    .value {
+        padding: 0;
+        max-width: 457px;
+    }
+
+    .valueHeading {
+        margin-top: -28px;
+        margin-bottom: 27px;
+    }
+}
+
+@media(min-width:1200px) {
+    
+    .valuesHeading {
+        width: 100%;
+    }
+    .values {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .value {
+        max-width: 350px;
+    }
+}
