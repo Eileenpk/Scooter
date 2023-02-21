@@ -8,7 +8,9 @@
 
 .feature {
     position: relative;
-    width: 83%;
+    width: 100%;
+    padding-left: 17%;
+    padding-right: 17%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,4 +62,46 @@
     background-image: url(/patterns/left-downward-arrow.svg);
     background-repeat: no-repeat;
 }
+
+@media(min-width:768px) {
+    .feature:nth-child(odd) {
+        background-image:url(/patterns/half-circle-right.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    .feature:nth-child(even) {
+        background-image:url(/patterns/half-circle-left.png);
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+    .feature:nth-child(1) .featureImageContainer::after {
+        top: 255px;
+        left: 39px;
+        background-image: url(/patterns/left-downward-arrow.svg);
+        background-repeat: no-repeat;
+    }
+    
+    
+    .feature:nth-child(2) .featureImageContainer::after {
+        top: 0px;
+        left: -100px;
+        background-image: url(/patterns/right-arrow.svg);
+    }
+    
+    .reverse::after { 
+        top: 250px;
+        left: 39px;
+        background-image: url(/patterns/left-upward-arrow.svg);
+    }
+    
+    .feature:nth-child(3) .featureImageContainer::after {
+        top: 85px;
+        left: 415px;
+        background-image: url(/patterns/left-downward-arrow.svg);
+        background-repeat: no-repeat;
+    }
+}
+
+
 
