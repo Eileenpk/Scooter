@@ -40,6 +40,16 @@
     background-repeat: no-repeat;
 }
 
+.reverse::after {
+    width: 735px;
+    height: 155px;
+    position: absolute; 
+    top: 125px;
+    content: "";
+    background-image: url(/patterns/left-upward-arrow.svg);
+    background-repeat: no-repeat;
+}
+
 .feature:nth-child(3) .featureImageContainer::after {
     width: 735px;
     height: 138px;
@@ -50,3 +60,4 @@
     background-image: url(/patterns/left-downward-arrow.svg);
     background-repeat: no-repeat;
 }
+
