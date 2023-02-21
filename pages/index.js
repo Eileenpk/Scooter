@@ -6,7 +6,9 @@ import rideIcon from "@/public/icons/ride.svg"
 import styles from "@/styles/Home.module.css";
 import Hero from "@/components/Hero";
 import GetImageBasedOnWidth from "@/components/functions/GetImageBasedOnWidth";
+import GetWindowWidth from "@/components/functions/GetWindowWidth"
 export default function Home() {
+  const {width} = GetWindowWidth()
   return (
     <>
       <Head>
@@ -34,8 +36,8 @@ export default function Home() {
               <Image
                 src={phoneIcon}
                 alt='hand holding a phone icon'
-                width={56}
-                height={56}
+                width={ width > 768 ? 96 : 56}
+                height={width > 768 ? 96 : 56}
                 className={styles.proccessIcon}
               />
               <h3 className={styles.proccessHeading}>Locate with app</h3>
@@ -45,8 +47,8 @@ export default function Home() {
               <Image
                 src={scooterIcon}
                 alt='scooter icon'
-                width={56}
-                height={56}
+                width={width > 768 ? 96 : 56}
+                height={width > 768 ? 96 : 56}
                 className={styles.proccessIcon}
               />
               <h3 className={styles.proccessHeading}>Pick your scooter</h3>
@@ -56,8 +58,8 @@ export default function Home() {
               <Image
                 src={rideIcon}
                 alt='scooter driving icon'
-                width={56}
-                height={56}
+                width={width > 768 ? 96 : 56}
+                height={width > 768 ? 96 : 56}
                 className={styles.proccessIcon}
               />
               <h3 className={styles.proccessHeading}>Enjoy the ride</h3>

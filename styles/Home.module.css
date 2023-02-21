@@ -23,7 +23,7 @@
     .processOuterWrapper {
         background-image: url(/patterns/vertical-blue-line.png);
         background-repeat: no-repeat;
-        background-position: left 20px bottom 150px;
+        background-position: left 39.5px bottom 150px;
     }
 
     .proccessCard {
@@ -48,4 +48,36 @@
     }
 }
 
+
+@media(min-width:1200px) {
+    .processOuterWrapper {
+        background-image: url(/patterns/horizontal-blue-line.png);
+        background-position: top 160px right 390px;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .proccessCard {
+        grid-template-areas: 
+        "icon"
+        "heading"
+        "text";
+        max-width: 350px;
+    }
+}
+
+@media(min-width:1400px) {
+    .processOuterWrapper {
+        background-position: top 160px right 460px;
+    }
+}
+
+@media(min-width:1520px) {
+    .processOuterWrapper {
+        background-position: top 160px right 560px;
+    }
+}
 
