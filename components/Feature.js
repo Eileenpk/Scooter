@@ -3,7 +3,7 @@ import Image from "next/image";
 import GetWindowWidth from "@/components/functions/GetWindowWidth";
 export default function Feature(featureInfo) {
   const { width } = GetWindowWidth();
- 
+
   const featuresmap = featureInfo.featureInfo.map((card) => {
     return (
       <section className={styles.feature} key={card.heading}>
@@ -15,14 +15,16 @@ export default function Feature(featureInfo) {
           <Image
             src={card.image}
             alt={card.heading}
-            width={width > 768 ? 445 :311}
-            height={width > 768 ? 445 :311}
+            width={width > 768 ? 445 : 311}
+            height={width > 768 ? 445 : 311}
             className={styles.featureMainImage}
           />
         </div>
-        <h2>{card.heading}</h2>
-        <p>{card.text}</p>
-        <button>Learn More</button>
+        <div className={styles.featureInfoWrapper}>
+          <h2>{card.heading}</h2>
+          <p className={styles.featureText}>{card.text}</p>
+          <button>Learn More</button>
+        </div>
       </section>
     );
   });
