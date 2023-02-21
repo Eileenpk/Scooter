@@ -8,16 +8,44 @@
 
 .processOuterWrapper {
     width: 83%;
-    margin-top: 120px;
+    padding-top: 120px;
 }
 
 .proccessCard {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
+    display: grid; 
+    justify-items: center;
     gap: 24px;
     margin-bottom: 48px;
+}
+
+@media(min-width:768px) {
+
+    .processOuterWrapper {
+        background-image: url(/patterns/vertical-blue-line.png);
+        background-repeat: no-repeat;
+        background-position: left 20px bottom 150px;
+    }
+
+    .proccessCard {
+        grid-template-areas: 
+        "icon heading"
+        "icon text";
+        justify-items: start;
+    }
+
+    .proccessIcon{
+        grid-area: icon;
+        margin-right: 79px;
+    }
+
+    .proccessHeading {
+        grid-area: heading;
+    }
+
+    .proccessText {
+        grid-area: text;
+        text-align: left;
+    }
 }
 
 
