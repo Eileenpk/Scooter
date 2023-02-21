@@ -53,8 +53,9 @@ img, picture, video, canvas, svg {
 /*
   7. Remove built-in form typography styles
 */
-input, button, textarea, select {
+input, button, textarea, select a {
   font: inherit;
+  color: inherit;
 }
 /*
   8. Avoid text overflows
@@ -147,7 +148,8 @@ nav a {
   text-decoration: none;
 }
 
-button {
+button,
+button a {
   color: var(--main-color);
   font-family: var(--heading-font-family);
   font-size: 16px;
@@ -204,15 +206,19 @@ button {
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
-button:hover {
+  button:hover a {
+  display: inline-block;
+  width: 100%;
+  color: inherit;
+}
+button:hover{
   background-color: var(--main-color);
   color: var(--second-color);
   cursor: pointer;
+  border: 2px solid var(--second-color);
 }
 
 }
-
-
 
 
 /* Mobile */

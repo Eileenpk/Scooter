@@ -3,7 +3,9 @@ import Image from "next/image";
 import GetWindowWidth from "@/components/functions/GetWindowWidth";
 export default function Feature(featureInfo) {
   const { width } = GetWindowWidth();
-
+  const openModal = () => {
+    console.log('modal opened!')
+  }
   const featuresmap = featureInfo.featureInfo.map((card) => {
     return (
       <section className={styles.feature} key={card.heading}>
@@ -23,12 +25,11 @@ export default function Feature(featureInfo) {
         <div className={styles.featureInfoWrapper}>
           <h2>{card.heading}</h2>
           <p className={styles.featureText}>{card.text}</p>
-          <button>Learn More</button>
+          {card.buttonText ? <button onClick={card.openModal ? () => openModal() : ''}>{card.href? <a href={card.href} className={styles.featureAnchorText}>{card.buttonText}</a> :card.buttonText}</button> : ''}
         </div>
       </section>
     );
   });
-  console.log(featuresmap);
 
   return <section className={styles.features}>{featuresmap}</section>;
 }
