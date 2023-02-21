@@ -29,6 +29,7 @@
     top: 155px;
     content: "";
     background-image: url(/patterns/left-downward-arrow.svg);
+    background-repeat: no-repeat;
 }
 
 .feature:nth-child(2) .featureImageContainer::after {
@@ -78,28 +79,22 @@
     .feature:nth-child(1) .featureImageContainer::after {
         top: 255px;
         left: 39px;
-        background-image: url(/patterns/left-downward-arrow.svg);
-        background-repeat: no-repeat;
     }
     
     
     .feature:nth-child(2) .featureImageContainer::after {
         top: 0px;
         left: -100px;
-        background-image: url(/patterns/right-arrow.svg);
     }
     
     .reverse::after { 
         top: 250px;
         left: 39px;
-        background-image: url(/patterns/left-upward-arrow.svg);
     }
     
     .feature:nth-child(3) .featureImageContainer::after {
         top: 85px;
         left: 415px;
-        background-image: url(/patterns/left-downward-arrow.svg);
-        background-repeat: no-repeat;
     }
 }
 
