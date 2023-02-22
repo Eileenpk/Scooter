@@ -89,8 +89,7 @@ The CSS has:
 The JavaScript has:
 - All forms will use FormSpree for data collection
 - Onclick to expand / hide nav for mobile
-- addClass function to add a transition for slide movement
-- removeClass function to remove the class added for transition
+- ToggleClass function to toggle a transition for movement
 
 
 ### Requirements 

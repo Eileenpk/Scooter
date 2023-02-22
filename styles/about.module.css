@@ -50,12 +50,14 @@
     max-width: 89.6%;
     text-align: left;
 }
+.aboutDropDownSectionWrapper:last-of-type {
+    margin-bottom: 120px;
+}
 
 @media(min-width: 768px) {
     .aboutFaqLabel {
         margin-top: 68px;
     }
-
 }
 
 @media(min-width: 1200px){
@@ -78,5 +80,9 @@
 
     .aboutFaqDetails {
         width: 730px;
+    }
+
+    .aboutDropDownSectionWrapper:last-of-type {
+        margin-bottom: 160px;
     }
 }
