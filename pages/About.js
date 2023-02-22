@@ -41,8 +41,8 @@ export default function About() {
         <Values heading="Our values" />
       </section>
       <section className={styles.dropDownSection}>
-        <h2>FAQ</h2>
-        <label>How it works</label>
+        <h2>FAQs</h2>
+        <label className={styles.aboutFaqLabel}>How it works</label>
         <details className={styles.aboutFaqDetails}>
           <summary className={styles.aboutFaqSummary}>
             How do I download the app?
@@ -119,7 +119,7 @@ export default function About() {
           </p>
         </details>
 
-        <label>Safe driving</label>
+        <label className={styles.aboutFaqLabel}>Safe driving</label>
 
         <details className={styles.aboutFaqDetails}>
           <summary className={styles.aboutFaqSummary}>

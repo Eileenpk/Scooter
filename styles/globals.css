@@ -99,7 +99,7 @@ body {
   overflow-x: hidden;
 }
 /* Typography  */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, summary {
   font-family: var(--heading-font-family);
   color: var(--heading-color);
   font-weight: 700;
@@ -124,7 +124,7 @@ h3 {
   letter-spacing: -0.8928571343421936px;
 }
 
-h4 {
+h4, summary {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.8035714030265808px;
@@ -157,7 +157,7 @@ button a {
   line-height: 25px;
 }
 
-label, summary {
+label {
   font-family: var(--heading-font-family);
   color: var(--heading-color);
   font-size: 24px;
@@ -190,13 +190,13 @@ summary {
     letter-spacing: -1.0714285373687744px;
   }
   
-  h4 {
+  h4, summary {
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -1.0714285373687744px;
   }
 
-  label, summary {
+  label {
     font-size: 40px;
     line-height: 48px;
     letter-spacing: -1.7857142686843872px;
