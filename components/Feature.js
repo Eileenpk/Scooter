@@ -14,7 +14,8 @@ export default function Feature(featureInfo) {
       setIsFormShown(false);
     }
   };
-  const featuresMap = featureInfo.featureInfo.map((card) => {
+
+  const featuresMap = featureInfo.featureInfo.map((card, index) => {
     return (
       <section className={styles.feature} key={card.heading}>
         <div
@@ -49,7 +50,7 @@ export default function Feature(featureInfo) {
         </div>
         {isFormShown ? (
           <div>
-            <Form />
+            <Form heading={card.buttonText} setIsFormShown={setIsFormShown}/>
           </div>
         ) : (
           ""

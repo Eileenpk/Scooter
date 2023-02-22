@@ -224,7 +224,8 @@ button {
 
 /* rotate elements with transition */
 
-.rotate {
+.rotate,
+.close {
   transition: transform 0.3s ease-in-out; /* apply transition to the transform property */
   transform: rotate(180deg); /* start with no rotation */
 }
@@ -232,6 +233,8 @@ button {
 .rotate.active {
   transform: rotate(0); /* rotate the element 180 degrees */
 }
+
+
 /* start @media
 
 
@@ -247,6 +250,11 @@ button:hover{
   color: var(--second-color);
   cursor: pointer;
   border: 2px solid var(--second-color);
+}
+
+.close:hover {
+  cursor: pointer;
+  transform: rotate(0);
 }
 
 }
