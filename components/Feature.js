@@ -1,11 +1,19 @@
 import styles from "@/styles/feature.module.css";
 import Image from "next/image";
 import GetWindowWidth from "@/components/functions/GetWindowWidth";
+import Form from "./Form";
+import { useState } from "react";
+
 export default function Feature(featureInfo) {
   const { width } = GetWindowWidth();
+  const [isFormShown, setIsFormShown] = useState(false);
   const openModal = () => {
-    console.log('modal opened!')
-  }
+    if (!isFormShown) {
+      setIsFormShown(true);
+    } else {
+      setIsFormShown(false);
+    }
+  };
   const featuresMap = featureInfo.featureInfo.map((card) => {
     return (
       <section className={styles.feature} key={card.heading}>
@@ -25,8 +33,27 @@ export default function Feature(featureInfo) {
         <div className={styles.featureInfoWrapper}>
           <h2>{card.heading}</h2>
           <p className={styles.featureText}>{card.text}</p>
-          {card.buttonText ? <button onClick={card.openModal ? openModal : () => {}}>{card.href? <a href={card.href} className={styles.featureAnchorText}>{card.buttonText}</a> :card.buttonText}</button> : ''}
+          {card.buttonText ? (
+            <button onClick={card.openModal ? openModal : () => {}}>
+              {card.href ? (
+                <a href={card.href} className={styles.featureAnchorText}>
+                  {card.buttonText}
+                </a>
+              ) : (
+                card.buttonText
+              )}
+            </button>
+          ) : (
+            ""
+          )}
         </div>
+        {isFormShown ? (
+          <div>
+            <Form />
+          </div>
+        ) : (
+          ""
+        )}
       </section>
     );
   });

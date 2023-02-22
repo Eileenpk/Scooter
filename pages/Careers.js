@@ -1,12 +1,12 @@
 import Hero from "@/components/Hero";
 import Feature from "@/components/Feature";
 import Values from "@/components/Values";
+import Form from "@/components/Form";
 
 import styles from "@/styles/careers.module.css";
 
 import GetImageBasedOnWidth from "@/components/functions/GetImageBasedOnWidth";
 export default function Careers() {
-  
   return (
     <article>
       <Hero
@@ -30,6 +30,7 @@ export default function Careers() {
         ]}
       />
 
+      {/* <Form /> */}
       <section className={styles.careersValueSection}>
         <Values heading="Why join us?" />
       </section>

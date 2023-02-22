@@ -135,7 +135,7 @@ Users should be able to:
 #### Locations
 
 - When the "Message Us" call-to-action is clicked open modal to submit a form that sends to company email
-    - FullName
+    - Full Name
     - Phone number
     - Email address
     - message
