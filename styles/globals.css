@@ -6,6 +6,7 @@
   --main-color: #ffffff;
   --second-color:  #fcb72b;
   --third-color: #495567;
+  --second-background-color:#f2f5f9;
   --footer-color: #333A44;
   --font-color: #939CAA;
   --font-family:'Lexend Deca', sans-serif;
@@ -156,6 +157,20 @@ button a {
   line-height: 25px;
 }
 
+label, summary {
+  font-family: var(--heading-font-family);
+  color: var(--heading-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1.0714285373687744px;
+  text-align: center;
+}
+
+summary {
+  text-align: left;
+}
+
 @media (min-width: 768px) {
   h1 {
   font-size: 56px;
@@ -180,6 +195,12 @@ button a {
     line-height: 28px;
     letter-spacing: -1.0714285373687744px;
   }
+
+  label, summary {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.7857142686843872px;
+  }
   
 }
 
@@ -201,6 +222,16 @@ button {
   border: none;
 }
 
+/* rotate elements with transition */
+
+.rotate {
+  transition: transform 0.3s ease-in-out; /* apply transition to the transform property */
+  transform: rotate(180deg); /* start with no rotation */
+}
+
+.rotate.active {
+  transform: rotate(0); /* rotate the element 180 degrees */
+}
 /* start @media
 
 

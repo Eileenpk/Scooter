@@ -6,7 +6,7 @@ export default function Feature(featureInfo) {
   const openModal = () => {
     console.log('modal opened!')
   }
-  const featuresmap = featureInfo.featureInfo.map((card) => {
+  const featuresMap = featureInfo.featureInfo.map((card) => {
     return (
       <section className={styles.feature} key={card.heading}>
         <div
@@ -25,11 +25,11 @@ export default function Feature(featureInfo) {
         <div className={styles.featureInfoWrapper}>
           <h2>{card.heading}</h2>
           <p className={styles.featureText}>{card.text}</p>
-          {card.buttonText ? <button onClick={card.openModal ? () => openModal() : ''}>{card.href? <a href={card.href} className={styles.featureAnchorText}>{card.buttonText}</a> :card.buttonText}</button> : ''}
+          {card.buttonText ? <button onClick={card.openModal ? openModal : () => {}}>{card.href? <a href={card.href} className={styles.featureAnchorText}>{card.buttonText}</a> :card.buttonText}</button> : ''}
         </div>
       </section>
     );
   });
 
-  return <section className={styles.features}>{featuresmap}</section>;
+  return <section className={styles.features}>{featuresMap}</section>;
 }
