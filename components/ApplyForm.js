@@ -3,8 +3,8 @@ import Image from "next/image";
 import close from "@/public/icons/close.svg";
 import { useForm, ValidationError } from "@formspree/react";
 
-export default function Form({ heading, setIsFormShown }) {
-  const [state, handleSubmit] = useForm("xknaregq");
+export default function ApplyForm({ heading, setIsFormShown }) {
+  const [state, handleSubmit] = useForm("mzbqrwre");
   if (state.succeeded) {
     setTimeout(() => {
       setIsFormShown(false);
@@ -20,7 +20,8 @@ export default function Form({ heading, setIsFormShown }) {
             height={25}
           />
           <h2 className={styles.thanksHeading}>
-            Thanks for reaching out, we'll get back to you soon!
+            Thanks for applying to the {heading} position, we'll be looking over
+            your resume and get back to you soon!
           </h2>
         </div>
       </div>
@@ -30,15 +31,12 @@ export default function Form({ heading, setIsFormShown }) {
   return (
     <section className={styles.formOverLay}>
       <form className={styles.form} onSubmit={handleSubmit}>
-      <Image
+        <Image
           src={close}
           onClick={() => setIsFormShown(false)}
           className={`${styles.closeBtn} close`}
         />
-        <h2 className={styles.formHeading}>
-          {heading}{" "}
-        </h2>
-
+        <h2 className={styles.formHeading}>{heading} </h2>
         <div className={styles.formInputWrapper}>
           <label htmlFor="full name">
             Full Name
@@ -84,21 +82,33 @@ export default function Form({ heading, setIsFormShown }) {
               errors={state.errors}
             />
           </label>
-          <label htmlFor="message">
-            Message
+          <label htmlFor="resume">
+            Resume
             <textarea
-              id="message"
-              type="message"
-              name="message"
+              id="resume"
+              type="resume"
+              name="resume"
               className={styles.formInput}
-              placeholder="Message"
+              placeholder="resume"
               required
             ></textarea>
             <ValidationError
-              prefix="Message"
-              field="message"
+              prefix="resume"
+              field="resume"
               errors={state.errors}
             />
+          </label>
+
+          <label htmlFor="time">
+            Best time to reach you
+            <input
+              type="datetime-local"
+              name="time"
+              id="time"
+              required
+              className={styles.formInput}
+            ></input>
+            <ValidationError prefix="time" field="time" errors={state.errors} />
           </label>
           <label htmlFor="_optin">Subscribe to our newsletter box
           <input
@@ -114,7 +124,11 @@ export default function Form({ heading, setIsFormShown }) {
             errors={state.errors}
           />
           </label>
-          <button className={styles.formSubmitBtn} type="submit" disabled={state.submitting}>
+          <button
+            type="submit"
+            disabled={state.submitting}
+            className={styles.formSubmitBtn}
+          >
             Submit
           </button>
         </div>

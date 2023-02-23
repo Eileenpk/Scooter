@@ -3,8 +3,17 @@
     margin-bottom: 145px;
 }
 
+.careersJobsSection {
+    padding: 0 10%;
+    margin-bottom: 120px;
+}
+
 @media(min-width:768px) {
     .careersValueSection {
         margin-bottom: 120px;
+    }
+
+    .careersJobsSection {
+        margin-bottom: 160px;
     }
 }
