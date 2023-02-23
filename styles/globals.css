@@ -234,6 +234,10 @@ button {
   transform: rotate(0); /* rotate the element 180 degrees */
 }
 
+.close {
+  display: inline-block;
+  margin-left: 23%;
+}
 
 /* start @media
 
