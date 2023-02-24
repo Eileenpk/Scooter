@@ -13,6 +13,29 @@ export default function Header() {
   useEffect(() => {
     setIsNavOpen(true);
   }, [width > 768]);
+
+  // close nav bar on window resize
+
+  useEffect(() => {
+    const windowSizeChanged = (action) => {
+      setIsNavOpen(action);
+    }
+
+    if(width < 768) {
+      window.addEventListener("resize", windowSizeChanged);
+      windowSizeChanged(false)
+    }
+    else {
+      window.addEventListener("resize", windowSizeChanged);
+    windowSizeChanged(true)
+    }
+    
+    return () => {
+      window.removeEventListener("resize", windowSizeChanged);
+    };
+    
+  }, [width]);
+  
   // open and close mobile navbar
   const [isNavOpen, setIsNavOpen] = useState("");
   const openNavBar = () => {
