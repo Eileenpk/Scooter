@@ -15,10 +15,10 @@
     width: 100%;
 }
 .aboutDropDownSubSectionWrapper {
-    padding: 0 10%;
     width: 100%;
     margin: 0 auto;
 }
+
 .aboutFaqDetails {
     text-align: center;
     background-color: var(--second-background-color);
@@ -31,7 +31,7 @@
     list-style-type: none;
     position: relative;
     margin: 0 auto;
-    max-width: 89.6%;
+    max-width: 84.6%;
 }
 
 .aboutFaqArrow {

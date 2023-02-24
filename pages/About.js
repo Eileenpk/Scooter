@@ -47,23 +47,19 @@ export default function About() {
           <label className={styles.aboutFaqLabel}>How it works</label>
           <div className={styles.aboutDropDownSubSectionWrapper}>
             <details className={styles.aboutFaqDetails}>
-              <summary className={styles.aboutFaqSummary}>
+              <summary
+                onClick={() => ToggleClass("element1", "active")}
+                className={styles.aboutFaqSummary}
+              >
                 How do I download the app?
-                <span
-                  role="button"
-                  aria-label="open or close dropdown menu"
-                  className={styles.aboutFaqArrow}
-                >
-                  <Image
-                    src={arrow}
-                    width={18}
-                    height={12}
-                    alt="drop down arrow"
-                    id="element1"
-                    className={`rotate`}
-                    onClick={() => ToggleClass("element1", "active")}
-                  />
-                </span>
+                <Image
+                  src={arrow}
+                  width={18}
+                  height={12}
+                  alt="drop down arrow"
+                  id="element1"
+                  className={`rotate ${styles.aboutFaqArrow}`}
+                />
               </summary>
               <p>
                 To download the Scoot app, you can search “Scoot” in both the
@@ -73,23 +69,19 @@ export default function About() {
               </p>
             </details>
             <details className={styles.aboutFaqDetails}>
-              <summary className={styles.aboutFaqSummary}>
+              <summary
+                onClick={() => ToggleClass("element2", "active")}
+                className={styles.aboutFaqSummary}
+              >
                 Can I find a nearby Scoots?
-                <span
-                  role="button"
-                  aria-label="open or close dropdown menu"
-                  className={styles.aboutFaqArrow}
-                >
-                  <Image
-                    src={arrow}
-                    width={18}
-                    height={12}
-                    alt="drop down arrow"
-                    id="element2"
-                    className={`rotate`}
-                    onClick={() => ToggleClass("element2", "active")}
-                  />
-                </span>
+                <Image
+                  src={arrow}
+                  width={18}
+                  height={12}
+                  alt="drop down arrow"
+                  id="element2"
+                  className={`rotate ${styles.aboutFaqArrow}`}
+                />
               </summary>
               <p>
                 Definitely! Simply open up the app and allow us to find your
@@ -98,23 +90,19 @@ export default function About() {
               </p>
             </details>
             <details className={styles.aboutFaqDetails}>
-              <summary className={styles.aboutFaqSummary}>
+              <summary
+                onClick={() => ToggleClass("element3", "active")}
+                className={styles.aboutFaqSummary}
+              >
                 Do I need a license to ride?
-                <span
-                  role="button"
-                  aria-label="open or close dropdown menu"
-                  className={styles.aboutFaqArrow}
-                >
-                  <Image
-                    src={arrow}
-                    width={18}
-                    height={12}
-                    alt="drop down arrow"
-                    id="element3"
-                    className={`rotate`}
-                    onClick={() => ToggleClass("element3", "active")}
-                  />
-                </span>
+                <Image
+                  src={arrow}
+                  width={18}
+                  height={12}
+                  alt="drop down arrow"
+                  id="element3"
+                  className={`rotate ${styles.aboutFaqArrow}`}
+                />
               </summary>
               <p>
                 Yup! We provide information inside the app regarding local laws
@@ -127,23 +115,19 @@ export default function About() {
           <label className={styles.aboutFaqLabel}>Safe driving</label>
           <div className={styles.aboutDropDownSubSectionWrapper}>
             <details className={styles.aboutFaqDetails}>
-              <summary className={styles.aboutFaqSummary}>
+              <summary
+                onClick={() => ToggleClass("element4", "active")}
+                className={styles.aboutFaqSummary}
+              >
                 Should I wear a helmet?
-                <span
-                  role="button"
-                  aria-label="open or close dropdown menu"
-                  className={styles.aboutFaqArrow}
-                >
-                  <Image
-                    src={arrow}
-                    width={18}
-                    height={12}
-                    alt="drop down arrow"
-                    id="element4"
-                    className={`rotate`}
-                    onClick={() => ToggleClass("element4", "active")}
-                  />
-                </span>
+                <Image
+                  src={arrow}
+                  width={18}
+                  height={12}
+                  alt="drop down arrow"
+                  id="element4"
+                  className={`rotate ${styles.aboutFaqArrow}`}
+                />
               </summary>
               <p>
                 Yes, please do! All cities have different laws. But we strongly
@@ -154,23 +138,19 @@ export default function About() {
             </details>
 
             <details className={styles.aboutFaqDetails}>
-              <summary className={styles.aboutFaqSummary}>
+              <summary
+                onClick={() => ToggleClass("element5", "active")}
+                className={styles.aboutFaqSummary}
+              >
                 How about the rules & regulations?
-                <span
-                  role="button"
-                  aria-label="open or close dropdown menu"
-                  className={styles.aboutFaqArrow}
-                >
-                  <Image
-                    src={arrow}
-                    width={18}
-                    height={12}
-                    alt="drop down arrow"
-                    id="element5"
-                    className={`rotate`}
-                    onClick={() => ToggleClass("element5", "active")}
-                  />
-                </span>
+                <Image
+                  src={arrow}
+                  width={18}
+                  height={12}
+                  alt="drop down arrow"
+                  id="element5"
+                  className={`rotate ${styles.aboutFaqArrow}`}
+                />
               </summary>
               <p>
                 Now is not the time to be a rule breaker. Be sure you're
@@ -181,23 +161,19 @@ export default function About() {
             </details>
 
             <details className={styles.aboutFaqDetails}>
-              <summary className={styles.aboutFaqSummary}>
+              <summary
+                onClick={() => ToggleClass("element6", "active")}
+                className={styles.aboutFaqSummary}
+              >
                 What if I damage my Scoot?
-                <span
-                  role="button"
-                  aria-label="open or close dropdown menu"
-                  className={styles.aboutFaqArrow}
-                >
-                  <Image
-                    src={arrow}
-                    width={18}
-                    height={12}
-                    alt="drop down arrow"
-                    id="element6"
-                    className={`rotate`}
-                    onClick={() => ToggleClass("element6", "active")}
-                  />
-                </span>
+                <Image
+                  src={arrow}
+                  width={18}
+                  height={12}
+                  alt="drop down arrow"
+                  id="element6"
+                  className={`rotate ${styles.aboutFaqArrow}`}
+                />
               </summary>
               <p>
                 Be sure to read our terms and conditions carefully. Not the most
