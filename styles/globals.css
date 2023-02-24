@@ -9,6 +9,7 @@
   --second-background-color:#f2f5f9;
   --third-background-color:#FCB72B26;
   --footer-color: #333A44;
+  --social-link-hover-color: #E5ECF4;
   --font-color: #939CAA;
   --font-family:'Lexend Deca', sans-serif;
   --heading-color: #495567;
@@ -199,11 +200,6 @@ summary {
   
 }
 
-@media(min-width:1200px) {
-  
-
-}
-
 /* general styles */
 body {
   display: flex;
@@ -239,13 +235,17 @@ button {
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
+  a:hover {
+    color: var(--second-color);
+  }
+  
   button:hover a {
   display: inline-block;
   width: 100%;
   color: inherit;
 }
-button:hover{
-  background-color: var(--main-color);
+ button:hover{
+  background-color: transparent;
   color: var(--second-color);
   cursor: pointer;
   border: 2px solid var(--second-color);
@@ -256,19 +256,12 @@ button:hover{
   transform: rotate(0);
 }
 
+.footerLink:hover path{
+  fill: var(--social-link-hover-color);
 }
 
-
-/* Mobile */
-@media (max-width: 700px) {
- 
+details:hover {
+  cursor: pointer;
+  background-color: var(--third-background-color);
 }
-
-
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
- 
 }
-
-
-

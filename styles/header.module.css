@@ -53,6 +53,7 @@
         display: flex;
         align-items: center;
         height: 96px;
+        margin-bottom: 20px;
     }
     
     .headerLogo{
@@ -92,6 +93,7 @@
 @media (min-width:1200px) {
     .header {
         margin: auto;
+        margin-bottom: 20px;
     }
     .headerLogo{
         margin-left: 165px;
