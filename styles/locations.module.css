@@ -5,12 +5,17 @@
     align-items: center;
 }
 
-.locationsMapImage{
+.locationsSectionImageContainer {
+    width: 311px;
+    height: 152px;
     margin-top: 72px;
     margin-bottom: 40px;
+    background-image: url(/images/world-map-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.locationCard {
+.locationsCard {
     background: var(--third-background-color);
     width: 82%;
     height: 72px;
@@ -38,3 +43,139 @@
     margin-bottom: 72px;
 }
 
+@media(min-width:768px) {
+    .locationsSectionImageContainer {
+        position: relative;
+        width: 689px;
+        height: 337px;
+        margin-top: 144px;
+        margin-bottom: 64px;
+        background-image: url(/images/world-map-tablet.png);
+    }
+
+    .locationsCard {
+        position: relative;
+        width: 120px;
+        height: 40px;
+        background-color: var(--second-color);
+    }
+
+    .locationsCard::after{
+        content: "";
+        position: absolute;
+        bottom: -9px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid var(--second-color);
+    }
+
+    .locationsCard1 {
+        bottom: 355px;
+        right: 190px;
+    }
+
+    .locationsCard2{
+        bottom: 442px;
+        right: 45px;
+    }
+
+    .locationsCard3{
+        bottom: 355px;
+        left: 195px;
+    }
+
+    .locationsCard4{
+        bottom: 515px;
+        left: 245px;
+    }
+
+    .locationsCard h4 {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: -0.5803571343421936px;
+    }
+
+    .locationsNotListedSectionHeading {
+        margin-top: -180px;
+        margin-bottom: 40px;
+        max-width: 457px;
+    }
+
+    .locationsNotListedSectionText {
+        max-width: 573px;
+        margin-bottom: 40px;
+    }
+
+    .locationsNotListedSectionBtn {
+        margin-bottom: 120px;
+    }
+}
+
+@media(min-width:1200px) {
+    .locationsSectionImageContainer {
+        width: 1110px;
+        height: 543px;
+        margin-top: 120px;
+        margin-bottom: 0px;
+        background-image: url(/images/world-map-desktop.png);
+    }
+
+    .locationsCard {
+        width: 189px;
+        height: 88px;
+    }
+
+    .locationsCard1 {
+        bottom: 475px;
+        right: 315px;
+    }
+
+    .locationsCard2{
+        bottom: 640px;
+        right: 70px;
+    }
+
+    .locationsCard3{
+        bottom: 510px;
+        left: 320px;
+    }
+
+    .locationsCard4{
+        bottom: 780px;
+        left: 385px;
+    }
+
+    .locationsCard h4 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: -1.0714285373687744px;
+    }
+
+    .locationsNotListedSection {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -250px;
+        margin-bottom: 122px;
+    }
+
+    .locationsNotListedSectionHeading {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        max-width: 351px;
+    }
+
+    .locationsNotListedSectionText {
+        max-width: 573px;
+        margin-bottom: 0px;
+        text-align: left;
+    }
+
+    .locationsNotListedSectionBtn {
+        margin-bottom: 0px;
+    }
+}
