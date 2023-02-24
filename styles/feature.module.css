@@ -77,6 +77,9 @@
 }
 
 @media(min-width:768px) {
+    .feature {
+        width: 100vw;
+    }
     .featureInfoWrapper {
         gap: 40px;
         max-width: 573px;
@@ -95,14 +98,15 @@
     }
     .feature:nth-child(1) .featureImageContainer::after {
         top: 295px;
-        left: calc(100% - 735px );
+        left: calc(100% - 745px );
     }
     
     
     .feature:nth-child(2) .featureImageContainer::after {
         width: 735px;
         top: 0px;
-        right: calc(735px - 100%);
+        left: -40px;
+        /* right: calc(635px - 100%); */
     }
     
     .reverse::after { 
