@@ -1,7 +1,20 @@
 import Hero from "@/components/Hero";
+import Form from "@/components/Form";
 import GetImageBasedOnWidth from "@/components/functions/GetImageBasedOnWidth";
+import { useState } from "react";
 import styles from "@/styles/locations.module.css";
 export default function Locations() {
+
+  const [isFormShown, setIsFormShown] = useState(false);
+  const openModal = () => {
+    if (!isFormShown) {
+      setIsFormShown(true);
+    } else {
+      setIsFormShown(false);
+    }
+  };
+
+
   return (
     <article>
       <Hero
@@ -38,10 +51,17 @@ export default function Locations() {
           message us by clicking the link or messaging us on social.
         </p>
 
-        <button className={styles.locationsNotListedSectionBtn}>
+        <button onClick={openModal} className={styles.locationsNotListedSectionBtn}>
           Message Us
         </button>
       </section>
+      {isFormShown ? (
+          <div>
+            <Form heading='Message Us' setIsFormShown={setIsFormShown}/>
+          </div>
+        ) : (
+          ""
+        )}
     </article>
   );
 }
