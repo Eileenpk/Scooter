@@ -40,6 +40,16 @@
         left: 31px;
     }
 
+    .heroHeadingOnly {
+        text-align: left;
+    }
+
+    .heroCirclesInPlainHeading {
+        position: relative;
+        bottom: 75px;
+        left: calc(100vw - 203px);
+    }
+
     .heroLineImage {
         display: none;
     }

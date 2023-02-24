@@ -5,7 +5,6 @@ import arrowImg from "@/public/patterns/right-arrow.svg";
 import arrowImgMobile from "@/public/patterns/right-arrow.png";
 import circles from "@/public/patterns/white-circles.svg";
 
-
 export default function Hero({ title, text, btn, src, height, arrow, plain }) {
   const { width } = GetWindowWidth();
 
@@ -18,9 +17,22 @@ export default function Hero({ title, text, btn, src, height, arrow, plain }) {
 
   return (
     <section className={styles.hero} style={heroStyles}>
-      <h1 className={plain ? styles.heroHeadingOnly : styles.heroHeading}>
-        {title}
-      </h1>
+      {plain ? (
+        <div>
+          {" "}
+          <h1 className={styles.heroHeadingOnly}>{title} </h1>
+          {width > 768 && (
+            <Image
+              src={circles}
+              alt="three white circles in a row"
+              className={styles.heroCirclesInPlainHeading}
+              width={234}
+            />
+          )}
+        </div>
+      ) : (
+        <h1 className={styles.heroHeading}>{title}</h1>
+      )}
       <p className={styles.heroText}>{text}</p>
       <div className={styles.heroBtn}>{btn}</div>
       {arrow && width < 768 && (
@@ -40,11 +52,11 @@ export default function Hero({ title, text, btn, src, height, arrow, plain }) {
             className={styles.heroArrow}
           />
 
-          <Image 
-          src={circles}
-          alt='three white circles in a row'
-          className={styles.heroCircles}
-          width={234}
+          <Image
+            src={circles}
+            alt="three white circles in a row"
+            className={styles.heroCircles}
+            width={234}
           />
         </div>
       )}
