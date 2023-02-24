@@ -1,24 +1,24 @@
 .hero {
     width: 100vw;
-    min-height: 160px;
+    min-height: 10rem;
 }
 .heroHeading,
 .heroHeadingOnly {
     color: var(--main-color);
     width: 83%;
-    margin: 20px auto 0 auto;
-    margin-bottom: 24px;
-    padding-top: 115px;
+    margin: 1.25rem auto 0 auto;
+    margin-bottom: 1.5rem;
+    padding-top: 7.1875rem;
 }
 
 .heroHeadingOnly {
-    padding-top: 60px;
+    padding-top: 3.75rem;
 }
 
 .heroText {
     width: 83%;
     margin: auto;
-    margin-bottom: 34px;
+    margin-bottom: 2.125rem;
 }
 
 .heroBtn {
@@ -26,18 +26,18 @@
     margin: auto;
 }
 
-@media(min-width: 768px) {
+@media(min-width: 48rem) {
     .heroImageContainer {
         width: 100vw;
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-        margin-top: 40px;
+        margin-top: 2.5rem;
     }
 
     .heroCircles{
         position: relative;
-        left: 31px;
+        left: 1.9375rem;
     }
 
     .heroHeadingOnly {
@@ -46,8 +46,8 @@
 
     .heroCirclesInPlainHeading {
         position: relative;
-        bottom: 75px;
-        left: calc(100vw - 203px);
+        bottom: 4.6875rem;
+        left: calc(100vw - 12.6875rem);
     }
 
     .heroLineImage {
@@ -55,36 +55,36 @@
     }
 }
 
-@media(min-width:1400px) {
+@media(min-width:87.5rem) {
 
     .heroHeading {
-      width: 500px;  
+      width: 31.25rem;  
       text-align: left;
-      margin-left: 165px;
+      margin-left: 10.3125rem;
     }
 
     .heroText {
-       width: 405px;
+       width: 25.3125rem;
        text-align: left;
-       margin-left: 260px;
+       margin-left: 16.25rem;
     }
 
     .heroImageContainer {
         position: absolute;
-        top: 340px;
+        top: 21.25rem;
     }
 
     .heroLineImage {
        display: unset; 
        position: relative;
-       top: -135px;
+       top: -8.4375rem;
        background-image: url('/patterns/line.svg');
-       height: 16px;
-       width: 125px;
-       margin-right: 502px;
+       height: 1rem;
+       width: 7.8125rem;
+       margin-right: 31.375rem;
     }
 
     .heroBtn {
-        margin-left: 260px;
+        margin-left: 16.25rem;
     }
 }

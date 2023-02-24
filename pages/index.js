@@ -33,46 +33,46 @@ export default function Home() {
         />
 
         <section className={styles.processOuterWrapper}>
-          <div className={styles.proccessCard}>
+          <div className={styles.processCard}>
             <Image
               src={phoneIcon}
               alt="hand holding a phone icon"
               width={width > 768 ? 96 : 56}
               height={width > 768 ? 96 : 56}
-              className={styles.proccessIcon}
+              className={styles.processIcon}
             />
-            <h3 className={styles.proccessHeading}>Locate with app</h3>
-            <p className={styles.proccessText}>
+            <h3 className={styles.processHeading}>Locate with app</h3>
+            <p className={styles.processText}>
               Use the app to find the nearest scooter to you. We are
               continuously placing scooters in the areas with most demand, so
               one should never be too far away.{" "}
             </p>
           </div>
-          <div className={styles.proccessCard}>
+          <div className={styles.processCard}>
             <Image
               src={scooterIcon}
               alt="scooter icon"
               width={width > 768 ? 96 : 56}
               height={width > 768 ? 96 : 56}
-              className={styles.proccessIcon}
+              className={styles.processIcon}
             />
-            <h3 className={styles.proccessHeading}>Pick your scooter</h3>
-            <p className={styles.proccessText}>
+            <h3 className={styles.processHeading}>Pick your scooter</h3>
+            <p className={styles.processText}>
               We show the most important info for the scooters closest to you.
               So you know how much charge they have left and can see roughly how
               much it will cost.
             </p>
           </div>
-          <div className={styles.proccessCard}>
+          <div className={styles.processCard}>
             <Image
               src={rideIcon}
               alt="scooter driving icon"
               width={width > 768 ? 96 : 56}
               height={width > 768 ? 96 : 56}
-              className={styles.proccessIcon}
+              className={styles.processIcon}
             />
-            <h3 className={styles.proccessHeading}>Enjoy the ride</h3>
-            <p className={styles.proccessText}>
+            <h3 className={styles.processHeading}>Enjoy the ride</h3>
+            <p className={styles.processText}>
               Scan the QR code and the bike will unlock. Retract the cable lock,
               put on a helmet, and you’re off! Always lock bikes away from
               walkways and accessibility ramps.

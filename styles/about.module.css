@@ -1,6 +1,6 @@
 .aboutSection {
-    margin-top: 120px;
-    margin-bottom: 145px;
+    margin-top: 7.5rem;
+    margin-bottom: 9.0625rem;
 }
 
 .aboutFaqSection {
@@ -22,8 +22,8 @@
 .aboutFaqDetails {
     text-align: center;
     background-color: var(--second-background-color);
-    margin-bottom: 16px;
-    padding: 32px 0%;
+    margin-bottom: 1rem;
+    padding: 2rem 0%;
     width: 100%;
 }
 
@@ -42,50 +42,50 @@
 
 .aboutFaqLabel {
     display: block;
-    margin: 48px auto 32px auto;
+    margin: 3rem auto 2rem auto;
 }
 
 .aboutFaqDetails p {
-    margin: 24px auto 0 auto;
+    margin: 1.5rem auto 0 auto;
     max-width: 89.6%;
     text-align: left;
 }
 .aboutDropDownSectionWrapper:last-of-type {
-    margin-bottom: 120px;
+    margin-bottom: 7.5rem;
 }
 
-@media(min-width: 768px) {
+@media(min-width: 48rem) {
     .aboutFaqLabel {
-        margin-top: 68px;
-        font-size: 40px;
-        line-height: 48px;
-        letter-spacing: -1.7857142686843872px;
+        margin-top: 4.25rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        letter-spacing: -0.1116rem;
     }
 }
 
-@media(min-width: 1200px){
+@media(min-width: 75rem){
     
     .aboutDropDownSectionWrapper {
         display: flex;
-        margin-top: 64px;
+        margin-top: 4rem;
     }
 
     .aboutDropDownSubSectionWrapper {
         padding: 0;
         margin-left: auto;
-        width: 730px;
+        width: 45.625rem;
     }
 
     .aboutFaqLabel {
         margin-top: 0;
-        width: 350px;
+        width: 21.875rem;
     }
 
     .aboutFaqDetails {
-        width: 730px;
+        width: 45.625rem;
     }
 
     .aboutDropDownSectionWrapper:last-of-type {
-        margin-bottom: 160px;
+        margin-bottom: 10rem;
     }
 }

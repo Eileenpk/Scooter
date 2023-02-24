@@ -3,42 +3,42 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--second-background-color);
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .jobCardHeading {
-    margin-top: 36px;
-    margin-bottom: 4px;
+    margin-top: 2.25rem;
+    margin-bottom: 0.25rem;
 }
 .jobCardText {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .jobCardBtn {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
-@media(min-width:768px) {
+@media(min-width:48rem) {
     .jobCard {
         flex-direction: row;
         justify-content: space-between;
-        max-width: 1110px;
-        margin: 0 auto 24px;
+        max-width: 69.375rem;
+        margin: 0 auto 1.5rem;
     }
     .jobCardInfoContainer {
-        margin-left: 48px;
+        margin-left: 3rem;
     }
 
     .jobCardHeading {
-        margin-top: 34px;
-        margin-bottom: 4px;
+        margin-top: 2.125rem;
+        margin-bottom: 0.25rem;
     }
     .jobCardText {
-        margin-bottom: 33px;
+        margin-bottom: 2.0625rem;
     }
 
     .jobCardBtn {
-        margin-bottom: 0px;
-        margin-right: 48px;
+        margin-bottom: 0rem;
+        margin-right: 3rem;
     }
 }

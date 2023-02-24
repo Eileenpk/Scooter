@@ -1,18 +1,18 @@
 .header {
     width: 100vw;
-    padding-top: 24px;
-    max-height: 64px;
+    padding-top: 1.5rem;
+    max-height: 4rem;
 }
 
 .headerLogo{
-    margin-left: calc(50% - 75px);
-    margin-bottom: 22px;
+    margin-left: calc(50% - 4.6875rem);
+    margin-bottom: 1.375rem;
     display: inline-block;
 }
 
 .headerNavIcon {
-    margin-bottom: 22px;
-    margin-left: 32px;
+    margin-bottom: 1.375rem;
+    margin-left: 2rem;
     display: inline-block;
 }
 
@@ -21,11 +21,11 @@
     z-index: 2;
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    width: 256px;
+    gap: 1.5rem;
+    width: 16rem;
     height: 100vh;
-    padding-top: 64px;
-    padding-left: 32px;
+    padding-top: 4rem;
+    padding-left: 2rem;
     background: var(--footer-color);
 }
 
@@ -34,7 +34,7 @@
 .headerNavScreenOverLay {
     position: absolute;
     z-index: 1;
-    top: 64px;
+    top: 4rem;
     width: 100vw;
     height: 100vh;
     background-color: #000000bf;
@@ -42,23 +42,23 @@
 
 .headerNavBtn {
     background: var(--second-color);
-    margin-top: 339px; 
+    margin-top: 21.1875rem; 
 }
 
 .headerNavBtn a {
     color: var(--main-color);
 }
-@media (min-width:768px) {
+@media (min-width:48rem) {
     .header {
         display: flex;
         align-items: center;
-        height: 96px;
-        margin-bottom: 20px;
+        height: 6rem;
+        margin-bottom: 1.25rem;
     }
     
     .headerLogo{
-        margin-left: 39px;
-        margin-bottom: 0px;
+        margin-left: 2.4375rem;
+        margin-bottom: 0rem;
     }
     
     .headerNavIcon {
@@ -69,11 +69,11 @@
         position: unset;
         flex-direction: row;
         align-items: center;
-        gap: 32px;
+        gap: 2rem;
         width: 100%;
         height: fit-content;
-        padding-top: 0px;
-        padding-left: 58px;
+        padding-top: 0rem;
+        padding-left: 3.625rem;
         background: none;
     }
     
@@ -84,22 +84,22 @@
     }
     
     .headerNavBtn {
-        margin-top: 0px;
+        margin-top: 0rem;
         margin-left: auto;
-        margin-right: 40px;
+        margin-right: 2.5rem;
     }
 }
 
-@media (min-width:1200px) {
+@media (min-width:75rem) {
     .header {
         margin: auto;
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
     .headerLogo{
-        margin-left: 165px;
+        margin-left: 10.3125rem;
     }
     
     .headerNavBtn {
-        margin-right: 165px;
+        margin-right: 10.3125rem;
     }
 }

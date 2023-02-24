@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap');
 
 :root {
-  font-size: 16px;
+  font-size: 1rem;
   --main-color: #ffffff;
   --second-color:  #fcb72b;
   --third-color: #495567;
@@ -109,44 +109,44 @@ h1, h2, h3, h4, summary {
 }
 
 h1 {
-  font-size: 40px;
-  line-height: 40px;
-  letter-spacing: -1.7857142686843872px;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.1116rem;
 }
 
 h2 {
-  font-size: 32px;
-  line-height: 32px;
-  letter-spacing: -1.4285714626312256px;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: -0.0893rem;
 }
 
 h3 {
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: -0.8928571343421936px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.0558rem;
 }
 
 h4, summary {
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: -0.8035714030265808px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.0502rem;
 }
 
 p {
   font-family: var(--font-family);
   color: var(--font-color);
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 0px;
+  line-height: 1.5625rem;
+  letter-spacing: 0rem;
   text-align: center;
 }
 
 nav a {
   color: var(--font-color);
   font-family: var(--heading-font-family);
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
   font-weight: 700;
   text-decoration: none;
 }
@@ -155,17 +155,17 @@ button,
 button a {
   color: var(--main-color);
   font-family: var(--heading-font-family);
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 1rem;
+  line-height: 1.5625rem;
 }
 
 label {
   font-family: var(--heading-font-family);
   color: var(--heading-color);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 28px;
-  letter-spacing: -1.0714285373687744px;
+  line-height: 1.75rem;
+  letter-spacing: -0.067rem;
   text-align: center;
 }
 
@@ -173,29 +173,29 @@ summary {
   text-align: left;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   h1 {
-  font-size: 56px;
-  line-height: 56px;
-  letter-spacing: -2.5px;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.1563rem;
   }
   
   h2 {
-    font-size: 48px;
-    line-height: 48px;
-    letter-spacing: -2.142857074737549px;
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: -0.1339rem;
   }
   
   h3 {
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: -1.0714285373687744px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.067rem;
   }
   
   h4, summary {
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: -1.0714285373687744px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.067rem;
   }
   
 }
@@ -208,8 +208,8 @@ body {
 }
 button {
   background: var(--second-color);
-  height: 53px;
-  width: 192px;
+  height: 3.3125rem;
+  width: 12rem;
   border: none;
 }
 
@@ -248,7 +248,7 @@ button {
   background-color: transparent;
   color: var(--second-color);
   cursor: pointer;
-  border: 2px solid var(--second-color);
+  border: 0.125rem solid var(--second-color);
 }
 
 .close:hover {

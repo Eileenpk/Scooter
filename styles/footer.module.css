@@ -6,11 +6,11 @@
 }
 
 
-@media(min-width:768px) {
+@media(min-width:48rem) {
     .footerHeader {
-        font-size: 48px;
-        line-height: 48px;
-        letter-spacing: -2.142857074737549px;
+        font-size: 3rem;
+        line-height: 3rem;
+        letter-spacing: -0.1339rem;
     }
 }
 
@@ -20,22 +20,22 @@
 }
 
 .footerHeader {
-    margin:0px auto 40px auto;
-    max-width: 311px;
+    margin:0rem auto 2.5rem auto;
+    max-width: 19.4375rem;
 }
 .footerDownloadSectionWrapper {
     display: flex;
     flex-direction: column;
-    height: 375px;
+    height: 23.4375rem;
     background-color: var(--third-color);
     background-image: url('/patterns/semi-circles.svg');
     background-repeat: no-repeat;
-    background-position: bottom right -150px;
-    padding-top: 88px;
+    background-position: bottom right -9.375rem;
+    padding-top: 5.5rem;
 }
 
 .footerSignupIconWrapper {
-    margin: 0px auto 0px auto;
+    margin: 0rem auto 0rem auto;
 }
 
 .footerSignupIcons {
@@ -43,24 +43,24 @@
 }
 
 .footerSignupIcons:first-of-type {
-    margin-right: 13px;
+    margin-right: 0.8125rem;
 }
 
 .footerLinkWrapper {
     background: var(--footer-color);
-    height: 438px;
-    padding-top: 64px;
+    height: 27.375rem;
+    padding-top: 4rem;
 }
 
 .footerSubheader {
-    margin-bottom: 41px;
+    margin-bottom: 2.5625rem;
 }
 
 .footerNav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .footerNavLink {
@@ -68,18 +68,18 @@
 }
 .footerSocialLinksWrapper {
     display: flex;
-    gap: 24px;
-    margin-top: 69px;
+    gap: 1.5rem;
+    margin-top: 4.3125rem;
 }
 
-@media(min-width:768px) {
+@media(min-width:48rem) {
     .footerHeader {
-        max-width: 457px;
+        max-width: 28.5625rem;
     }
 
     .footerLinkWrapper {
-        height: 96px;
-        padding-top: 0px;
+        height: 6rem;
+        padding-top: 0rem;
         display: flex;
         align-items: center;
     }
@@ -87,27 +87,27 @@
     .footerNav{
         flex-direction: row;
         align-items: center;
-        gap: 32px;
+        gap: 2rem;
         width: 75%;
     }
 
     .footerSubheader {
-        margin-bottom: 0px;
-        margin-left: 40px;
-        margin-right: 58px;
+        margin-bottom: 0rem;
+        margin-left: 2.5rem;
+        margin-right: 3.625rem;
     }
 
     .footerSocialLinksWrapper {
         display: flex;
-        gap: 24px;
-        margin-top: 0px;
-        width: 120px;
+        gap: 1.5rem;
+        margin-top: 0rem;
+        width: 7.5rem;
         margin-left: auto;
-        margin-right: 40px;
+        margin-right: 2.5rem;
     }
 }
 
-@media(min-width:1440px) {
+@media(min-width:90rem) {
     .footer {
         width: 100vw;
     }
@@ -117,21 +117,21 @@
         align-items: center;
         justify-content: center;
         padding: 0;
-        height: 300px;
+        height: 18.75rem;
     }
     .footerHeader {
-        max-width: 415px;
+        max-width: 25.9375rem;
         text-align: left;
-        margin-left: 165px;
-        margin-right: 336px;
+        margin-left: 10.3125rem;
+        margin-right: 21rem;
     }
     
     .footerSignupIconWrapper {
-        margin-left: 113px;
+        margin-left: 7.0625rem;
     }
 
     .footerSubheader {
-        margin-left: 168px;
+        margin-left: 10.5rem;
     }
 
     .footerNav{

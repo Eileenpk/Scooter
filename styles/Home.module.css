@@ -2,88 +2,88 @@
     display: flex;
     flex-direction: column; 
     align-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 7.5rem;
 }
 
-/* proccess cards section*/
+/* process cards section*/
 
 .processOuterWrapper {
     width: 83%;
-    padding-top: 120px;
+    padding-top: 7.5rem;
 }
 
-.proccessCard {
+.processCard {
     display: grid; 
     justify-items: center;
-    gap: 24px;
-    margin-bottom: 48px;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
 }
 
-@media(min-width:768px) {
+@media(min-width:48rem) {
     .main {
-        margin-bottom: 104px;
+        margin-bottom: 6.5rem;
     }
     .processOuterWrapper {
         background-image: url(/patterns/vertical-blue-line.png);
         background-repeat: no-repeat;
-        background-position: left 39.5px bottom 150px;
+        background-position: left 2.4688rem bottom 9.375rem;
     }
 
-    .proccessCard {
+    .processCard {
         grid-template-areas: 
         "icon heading"
         "icon text";
         justify-items: start;
     }
 
-    .proccessIcon{
+    .processIcon{
         grid-area: icon;
-        margin-right: 79px;
+        margin-right: 4.9375rem;
     }
 
-    .proccessHeading {
+    .processHeading {
         grid-area: heading;
     }
 
-    .proccessText {
+    .processText {
         grid-area: text;
         text-align: left;
     }
 }
 
 
-@media(min-width:1200px) {
+@media(min-width:75rem) {
     .main {
-        margin-bottom: 200px;
+        margin-bottom: 12.5rem;
     }
     .processOuterWrapper {
         background-image: url(/patterns/horizontal-blue-line.png);
-        background-position: top 160px right 390px;
+        background-position: top 10rem right 24.375rem;
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        gap: 1.875rem;
         justify-content: center;
         width: 100%;
     }
 
-    .proccessCard {
+    .processCard {
         grid-template-areas: 
         "icon"
         "heading"
         "text";
-        max-width: 350px;
+        max-width: 21.875rem;
     }
 }
 
-@media(min-width:1400px) {
+@media(min-width:87.5rem) {
     .processOuterWrapper {
-        background-position: top 160px right 460px;
+        background-position: top 10rem right 28.75rem;
     }
 }
 
-@media(min-width:1520px) {
+@media(min-width:95rem) {
     .processOuterWrapper {
-        background-position: top 160px right 560px;
+        background-position: top 10rem right 35rem;
     }
 }
 
