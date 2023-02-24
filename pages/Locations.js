@@ -3,6 +3,7 @@ import Form from "@/components/Form";
 import GetImageBasedOnWidth from "@/components/functions/GetImageBasedOnWidth";
 import { useState } from "react";
 import styles from "@/styles/locations.module.css";
+import Head from "next/head";
 export default function Locations() {
 
   const [isFormShown, setIsFormShown] = useState(false);
@@ -17,6 +18,12 @@ export default function Locations() {
 
   return (
     <article>
+      <Head>
+        <title>Scoot Locations</title>
+        <meta name="description" content="Find a Scoot location near you and rent a scooter today" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Hero
         title="Locations"
         src={GetImageBasedOnWidth(

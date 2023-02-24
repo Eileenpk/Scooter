@@ -2,14 +2,20 @@ import Hero from "@/components/Hero";
 import Feature from "@/components/Feature";
 import Values from "@/components/Values";
 import JobCard from "@/components/JobCard";
-// import { useState } from "react";
 import styles from "@/styles/careers.module.css";
-
 import GetImageBasedOnWidth from "@/components/functions/GetImageBasedOnWidth";
+import Head from "next/head";
+
 export default function Careers() {
 
   return (
     <article>
+      <Head>
+        <title>Scoot Careers</title>
+        <meta name="description" content="Find out why your career at Scoot will make work awesome" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Hero
         title="Careers"
         src={GetImageBasedOnWidth(

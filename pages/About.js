@@ -6,13 +6,19 @@ import Image from "next/image";
 import arrow from "@/public/icons/dropDownArrow.png";
 import GetImageBasedOnWidth from "@/components/functions/GetImageBasedOnWidth";
 import ToggleClass from "@/components/functions/ToggleClass";
-
+import Head from "next/head";
 import { useState } from "react";
 export default function About() {
   const [isActive, setIsActive] = useState([]);
 
   return (
     <article>
+      <Head>
+        <title>Scoot About</title>
+        <meta name="description" content="About Scoot, and why we're awesome sauce" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Hero
         title="About"
         src={GetImageBasedOnWidth(
