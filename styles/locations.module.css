@@ -1,0 +1,40 @@
+.locationsSection,
+.locationsNotListedSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locationsMapImage{
+    margin-top: 72px;
+    margin-bottom: 40px;
+}
+
+.locationCard {
+    background: var(--third-background-color);
+    width: 82%;
+    height: 72px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.locationsNotListedSection {
+    width: 82%;
+    margin: 0 auto;
+}
+
+.locationsNotListedSectionHeading {
+    margin-top: 72px;
+    margin-bottom: 32px;
+}
+
+.locationsNotListedSectionText {
+    margin-bottom: 32px;
+}
+
+.locationsNotListedSectionBtn {
+    margin-bottom: 72px;
+}
+
