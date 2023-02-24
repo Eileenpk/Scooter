@@ -42,7 +42,7 @@ export default function ApplyForm({ heading, setIsFormShown }) {
             Full Name
             <input
               id="full name"
-              type="full name"
+              type="text"
               name="full name"
               className={styles.formInput}
               placeholder="Full Name"
@@ -54,7 +54,7 @@ export default function ApplyForm({ heading, setIsFormShown }) {
             Phone number
             <input
               id="phone"
-              type="phone"
+              type="tel"
               name="phone"
               className={styles.formInput}
               placeholder="Phone number"
@@ -83,13 +83,13 @@ export default function ApplyForm({ heading, setIsFormShown }) {
             />
           </label>
           <label htmlFor="resume">
-            Resume
+           Link to your resume</label>
             <textarea
               id="resume"
-              type="resume"
+              type="text"
               name="resume"
               className={styles.formInput}
-              placeholder="resume"
+              placeholder="Resume link"
               required
             ></textarea>
             <ValidationError
@@ -97,7 +97,7 @@ export default function ApplyForm({ heading, setIsFormShown }) {
               field="resume"
               errors={state.errors}
             />
-          </label>
+          
 
           <label htmlFor="time">
             Best time to reach you

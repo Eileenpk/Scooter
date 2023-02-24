@@ -14,7 +14,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    padding: 10%;
+    padding: 5%;
     width: 80%;
     max-width: 800px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -73,17 +73,4 @@
     position: relative;
 }
 
-@media(min-width:768px) {
-    /* .form {
-        padding: 2%;
-    }
-    .formInputWrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    } 
-    .formInput {
-        display: inline-block;
-        margin: 8px 0 12px;
-    } */
-}
+

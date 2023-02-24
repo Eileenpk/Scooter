@@ -41,22 +41,22 @@ export default function Form({ heading, setIsFormShown }) {
 
         <div className={styles.formInputWrapper}>
           <label htmlFor="full name">
-            Full Name
+            Full Name</label>
             <input
               id="full name"
-              type="full name"
+              type="text"
               name="full name"
               className={styles.formInput}
               placeholder="Full Name"
               required
             ></input>
             <ValidationError prefix="name" field="name" errors={state.errors} />
-          </label>
+          
           <label htmlFor="phone">
-            Phone number
+            Phone number</label>
             <input
               id="phone"
-              type="phone"
+              type="tel"
               name="phone"
               className={styles.formInput}
               placeholder="Phone number"
@@ -67,9 +67,9 @@ export default function Form({ heading, setIsFormShown }) {
               field="phone"
               errors={state.errors}
             />
-          </label>
+          
           <label htmlFor="email">
-            Email address
+            Email address</label>
             <input
               id="email"
               type="email"
@@ -83,12 +83,12 @@ export default function Form({ heading, setIsFormShown }) {
               field="email"
               errors={state.errors}
             />
-          </label>
+          
           <label htmlFor="message">
-            Message
+            Message</label>
             <textarea
               id="message"
-              type="message"
+              type="text"
               name="message"
               className={styles.formInput}
               placeholder="Message"
@@ -99,7 +99,7 @@ export default function Form({ heading, setIsFormShown }) {
               field="message"
               errors={state.errors}
             />
-          </label>
+          
           <label htmlFor="_optin">Subscribe to our newsletter box
           <input
             id="_optin"
