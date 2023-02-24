@@ -90,7 +90,8 @@ The JavaScript has:
 - All forms will use FormSpree for data collection
 - Onclick to expand / hide nav for mobile
 - ToggleClass function to toggle a transition for movement
-
+- GetWindowWidth function to dynamically render content
+- GetImageBasedOnWindowWidth function to dynamically render correct image (for cleaner code)
 
 ### Requirements 
 
