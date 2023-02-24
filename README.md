@@ -144,12 +144,12 @@ Users should be able to:
 
 ### Screenshot
 
-![screen shot of full screen webpage]()
-![screen shot of mobile webpage]()
+![screen shot of full screen webpage](https://github.com/Eileenpk/Scooter/blob/main/public/images/desktop-screen-shot.png)
+![screen shot of mobile webpage](https://github.com/Eileenpk/Scooter/blob/main/public/images/mobile-screen-shot.png)
 ### Links
 
-- Solution URL: [GitHub]()
-- Live Site URL: [live site]()
+- Solution URL: [GitHub](https://github.com/Eileenpk/Scooter)
+- Live Site URL: [live site](https://scooter-puce.vercel.app/)
 
 ### Built with
 
