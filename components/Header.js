@@ -67,7 +67,7 @@ export default function Header() {
             width={75}
             height={20}
             alt="Scoot logo"
-            onClick={openNavBar}
+            onClick={closeNavBar}
             className={styles.headerLogo}
           />
         </Link>
@@ -93,7 +93,7 @@ export default function Header() {
             width={75}
             height={20}
             alt="Scoot logo"
-            onClick={openNavBar}
+            onClick={closeNavBar}
             className={styles.headerLogo}
           />
         </Link>

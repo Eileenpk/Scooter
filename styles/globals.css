@@ -215,6 +215,7 @@ button,
 }
 
 .button {
+  color: var(--main-color);
   text-align: center;
   padding-top: .8rem;
 }
