@@ -46,7 +46,12 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <section className={isNavOpen ? styles.headerNavIsHidden : styles.headerNavIsOpen} aria-hidden={isNavOpen ? "true" : "false"}>
+      <div
+        className={
+          isNavOpen ? styles.headerNavIsHidden : styles.headerNavIsOpen
+        }
+        aria-hidden={isNavOpen ? "true" : "false"}
+      >
         <Image
           src={hamburger}
           width={19}
@@ -66,21 +71,21 @@ export default function Header() {
             className={styles.headerLogo}
           />
         </Link>
-      </section>
+      </div>
 
-      <section
+      <div
         className={isNavOpen ? styles.headerNavOpen : styles.headerNavHidden}
         aria-hidden={isNavOpen ? "false" : "true"}
       >
         <div className={styles.headerNavScreenOverLay}></div>
-          <Image
-            src={close}
-            width={19}
-            height={16}
-            alt="close navigation"
-            onClick={closeNavBar}
-            className={styles.headerNavIcon}
-          />
+        <Image
+          src={close}
+          width={19}
+          height={16}
+          alt="close navigation"
+          onClick={closeNavBar}
+          className={styles.headerNavIcon}
+        />
 
         <Link href="/">
           <Image
@@ -116,11 +121,11 @@ export default function Header() {
             Careers
           </Link>
 
-          <button className={styles.headerNavBtn}>
-            <a href="#download">Get Scooting</a>
-          </button>
+          <a className={`${styles.headerNavBtn} button`} href="#download">
+            Get Scooting
+          </a>
         </nav>
-      </section>
+      </div>
     </header>
   );
 }

@@ -206,11 +206,17 @@ body {
   justify-content: center;
 
 }
-button {
+button,
+.button {
   background: var(--second-color);
   height: 3.3125rem;
   width: 12rem;
   border: none;
+}
+
+.button {
+  text-align: center;
+  padding-top: .8rem;
 }
 
 /* rotate elements with transition */
@@ -239,12 +245,13 @@ button {
     color: var(--second-color);
   }
   
-  button:hover a {
+  .button:hover,
+  button:hover {
   display: inline-block;
-  width: 100%;
   color: inherit;
 }
- button:hover{
+ button:hover,
+ .button:hover{
   background-color: transparent;
   color: var(--second-color);
   cursor: pointer;

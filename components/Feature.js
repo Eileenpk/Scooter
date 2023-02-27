@@ -29,29 +29,27 @@ export default function Feature(featureInfo) {
             width={width > 768 ? 445 : 311}
             height={width > 768 ? 445 : 311}
             className={styles.featureMainImage}
-            preload='true'
+            preload="true"
           />
         </div>
         <div className={styles.featureInfoWrapper}>
           <h2>{card.heading}</h2>
           <p className={styles.featureText}>{card.text}</p>
           {card.buttonText ? (
-            <button onClick={card.openModal ? openModal : () => {}}>
-              {card.href ? (
-                <a href={card.href} className={styles.featureAnchorText}>
-                  {card.buttonText}
-                </a>
-              ) : (
-                card.buttonText
-              )}
-            </button>
+            <a
+              href={card.href}
+              className={`${styles.featureAnchorText} button`}
+              onClick={card.openModal ? openModal : () => {}}
+            >
+              {card.buttonText}
+            </a>
           ) : (
             ""
           )}
         </div>
         {isFormShown ? (
           <div>
-            <Form heading={card.buttonText} setIsFormShown={setIsFormShown}/>
+            <Form heading={card.buttonText} setIsFormShown={setIsFormShown} />
           </div>
         ) : (
           ""
