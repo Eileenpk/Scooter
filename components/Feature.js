@@ -29,6 +29,7 @@ export default function Feature(featureInfo) {
             width={width > 768 ? 445 : 311}
             height={width > 768 ? 445 : 311}
             className={styles.featureMainImage}
+            preload='true'
           />
         </div>
         <div className={styles.featureInfoWrapper}>
